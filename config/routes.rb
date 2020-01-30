@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   resources :examples, except: %i[new edit]
   # resources :users, except: %i[new edit]
   # Custom routes
+  get '/users' => 'users#index'
+  get '/users/:id' => 'users#show'
+
   post '/sign-up' => 'users#signup'
   post '/sign-in' => 'users#signin'
   delete '/sign-out' => 'users#signout'
