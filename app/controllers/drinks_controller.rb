@@ -1,11 +1,12 @@
 # frozen_string_literal: true
 
-class DrinksController < OpenReadController
+class DrinksController < ProtectedController
   before_action :set_drink, only: %i[show update destroy]
 
   # GET /drinks
   def index
-    @drinks = Drink.all
+    # @drinks = Drink.all
+    @drinks = current_user.drinks.all
 
     render json: @drinks
   end
@@ -28,6 +29,8 @@ class DrinksController < OpenReadController
 
   # PATCH/PUT /drinks/1
   def update
+    @drink = current_user.drinks.find(params[:id])
+
     if @drink.update(drink_params)
       render json: @drink
     else
