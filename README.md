@@ -3,6 +3,8 @@
 An API to store user's boba drink purchased from their favorites or new places.
 Users can create, edit, and delete their entries
 
+[MyBobaStory Repo](https://github.com/only1nglen/Project_2_Client)
+
 [MyBobaStory](https://only1nglen.github.io/Project_2_Client/)
 
 ## API URL
