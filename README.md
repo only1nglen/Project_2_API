@@ -3,7 +3,7 @@
 An API to store user's boba drink purchased from their favorites or new places.
 Users can create, edit, and delete their entries
 
-[GitHub](https://only1nglen.github.io/Project_2_Client/)
+[MyBobaStory](https://only1nglen.github.io/Project_2_Client/)
 
 ## API URL
 
@@ -28,7 +28,7 @@ All data returned from API actions is formatted as JSON.
 
 ## ERD
 
-[Imgur](https://i.imgur.com/vPITiCK.jpg?2)
+[ERD](https://i.imgur.com/vPITiCK.jpg?2)
 
 
 To Do:
