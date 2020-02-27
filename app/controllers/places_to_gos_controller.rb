@@ -5,7 +5,7 @@ class PlacesToGosController < ProtectedController
 
   # GET /places_to_gos
   def index
-    @places_to_gos = PlacesToGo.all
+    @places_to_gos = current_user.places_to_gos.all
 
     render json: @places_to_gos
   end
